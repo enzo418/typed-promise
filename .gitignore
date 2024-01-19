@@ -20,3 +20,5 @@
 
 !babel.config.js
 !tsconfig.json
+
+!README.md
