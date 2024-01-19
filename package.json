@@ -1,6 +1,6 @@
 {
   "name": "@enzo418/typed-promise",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A typescript library to return a promise with an error type. Includes a basic HttpClient that intregrates the typed promise so you do not have to write it.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,9 @@
     "test": "jest"
   },
   "keywords": [
-    "http"
+    "http",
+    "promise",
+    "typescript"
   ],
   "repository": {
     "type": "git",

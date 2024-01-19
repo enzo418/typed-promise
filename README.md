@@ -21,6 +21,8 @@ import { TypedPromise } from '@enzo418/typed-promise';
 You can then create a new TypedPromise and use it like a standard Promise, with additional type safety:
 
 ```typescript
+import { TypedPromise } from "@enzo418/typed-promise";
+
 let promise = new TypedPromise<number, MyError>((resolve, reject) => {
     if (Math.random() > 0.5) {
         resolve(42);
@@ -34,6 +36,8 @@ let promise = new TypedPromise<number, MyError>((resolve, reject) => {
 The library also includes an HTTP client that returns Promises but, if you know the backend's error types, you can convert them to TypedPromises using the `process` method:
 
 ```typescript
+import { TypedPromise, HttpClient, IProblemJson, processPromise } from "@enzo418/typed-promise";
+
 interface ResponseDTO {
     name: string;
     age: number;
